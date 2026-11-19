@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Michael's Irrigation &amp; Landscaping | Crosby, TX</title>
+  <meta name="description" content="Landscape design and installation, lawn care, drainage and sprinkler systems for homeowners across Harris County &amp; Greater Houston. 25+ years. Licensed Irrigator #8192.">
+  <meta name="theme-color" content="#17241A">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    // Hide reveal targets before first paint only when motion is allowed (avoids a flash of content)
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('js-motion');
+    // Safety net: if scripts fail to load, never leave content hidden
+    setTimeout(function () { if (!window.gsap) document.documentElement.classList.remove('js-motion'); }, 2500);
+  </script>
+</head>
+<body class="theme-dark">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a href="./" class="brand" data-reload aria-label="Michael's Irrigation & Landscaping — home">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="23" fill="var(--cream)"/>
+          <path d="M24 37V21" stroke="var(--forest)" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M24 27c-6.5 0-10.5-4-11.5-11 7 0 11.5 4 11.5 11z" fill="var(--sage-deep)"/>
+          <path d="M24 23c.6-7.5 5-12 13-12.5C36.6 18 32 22.6 24 23z" fill="var(--forest)"/>
+          <path d="M15 37.5h18" stroke="var(--earth)" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M33.5 26.5c1.9 2.4 2.9 4 2.9 5.3a2.9 2.9 0 0 1-5.8 0c0-1.3 1-2.9 2.9-5.3z" fill="var(--water-deep)"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">Michael's</span>
+          <span class="brand-sub">Irrigation &amp; Landscaping</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Our Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-phone" href="tel:2819484343">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
+          <span>281-948-4343</span>
+        </a>
+        <a class="btn btn-primary btn-sm header-cta" href="#estimate">Free Estimate</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-menu-toggle>
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu sheet -->
+  <div class="mobile-menu theme-dark" id="mobile-menu" data-mobile-menu hidden>
+    <nav aria-label="Mobile">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#about">About Michael</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-foot">
+      <a class="btn btn-primary btn-block" href="#estimate">Request a Free Estimate</a>
+      <a class="btn btn-outline btn-block" href="tel:2819484343">Call 281-948-4343</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero theme-dark" id="top">
+      <figure class="hero-media" aria-hidden="true">
+        <img src="assets/img/stock/hero-garden.jpg" alt="" width="2400" height="1602" fetchpriority="high" data-parallax="-8">
+      </figure>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-hero-item><span class="dot"></span> Harris County &amp; Greater Houston</p>
+          <h1 class="hero-title" data-hero-item>A landscape you'll be <em>proud</em> to come home to.</h1>
+          <p class="hero-lead" data-hero-item>Thoughtful landscape design, water‑smart sprinkler systems and drainage that works — designed, installed and cared for by Michael and his crew for over 25 years.</p>
+          <div class="hero-ctas" data-hero-item>
+            <a class="btn btn-primary btn-lg" href="#estimate">
+              Request a Free Estimate
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn-outline btn-lg" href="#work">See Our Work</a>
+          </div>
+        </div>
+
+        <div class="hero-badge">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span data-hero-quote>“Excellent service and response time.”</span>
+          <small data-hero-author>— Kathy A., Google review</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST STRIP ============ -->
+    <section class="trust theme-forest" aria-label="Why homeowners trust us">
+      <div class="container trust-grid">
+        <div class="trust-item" data-reveal>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l3.7 7.6 8.3 1.2-6 5.8 1.4 8.3L16 22l-7.4 3.9L10 17.6 4 11.8l8.3-1.2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <div><strong>25+ years</strong><span>of Houston landscapes</span></div>
+        </div>
+        <div class="trust-item" data-reveal>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l11 4v8c0 7-4.7 12-11 14C9.7 27 5 22 5 15V7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M11 16l3.5 3.5L21 13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><strong>Licensed &amp; insured</strong><span>TX Irrigator #8192</span></div>
+        </div>
+        <div class="trust-item" data-reveal>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="7" width="22" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 13h22M11 4v6M21 4v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <div><strong>3‑yr / 1‑yr warranty</strong><span>materials / workmanship</span></div>
+        </div>
+        <div class="trust-item" data-reveal>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c5 6 8 10.5 8 14.5a8 8 0 0 1-16 0C8 14.5 11 10 16 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <div><strong>Hunter &amp; Rain Bird</strong><span>pro-grade irrigation</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services theme-light" id="services">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow"><span class="dot"></span> What we do</p>
+          <h2>Everything your yard needs, <em>from the roots up</em>.</h2>
+          <p>Residential landscaping and irrigation across Harris County. One team that designs it, builds it and keeps it looking its best.</p>
+        </header>
+
+        <div class="service-grid">
+          <article class="service-card service-card-feature theme-dark" data-reveal>
+            <figure class="feature-media" aria-hidden="true"><img src="assets/img/stock/feature-stone-steps.jpg" alt="" width="1400" height="1750" loading="lazy"></figure>
+            <span class="feature-kicker">Our specialty</span>
+            <h3>Landscape Design &amp; Install</h3>
+            <p>Planting, beds and mulching, stone edging, flagstone patios and accent lighting. Designed around your home, your sun and the Texas climate.</p>
+            <ul class="tags"><li>Planting &amp; beds</li><li>Flagstone patios</li><li>Lighting</li></ul>
+            <a class="btn btn-primary" href="#estimate" data-estimate-service="landscape">Request an estimate <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="service-card" data-reveal data-tint="sage">
+            <div class="service-icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 28h32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 28c0-6 1-11 2-14M14 28c0-7 2-12 4-16M21 28c0-6 1-10 3-13M28 28c0-5 1-9 3-11M33 28c0-4 0-6 1-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M4 22h32v6H4z" fill="currentColor" opacity=".18"/></svg></div>
+            <h3>Lawn Care &amp; Maintenance</h3>
+            <p>Weekly or bi‑weekly mowing, edging and seasonal care, plus maintenance contracts that keep your landscape and sprinklers in top shape all year.</p>
+            <ul class="tags"><li>Weekly / bi‑weekly</li><li>Contracts</li><li>Seasonal</li></ul>
+            <a class="card-link" href="#estimate" data-estimate-service="lawn">Request an estimate <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="service-card" data-reveal data-tint="sage">
+            <div class="service-icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 16h32v8H4z" fill="currentColor" opacity=".18"/><path d="M4 16h32M4 24h32" stroke="currentColor" stroke-width="2"/><circle cx="11" cy="20" r="1.6" fill="currentColor"/><circle cx="20" cy="20" r="1.6" fill="currentColor"/><circle cx="29" cy="20" r="1.6" fill="currentColor"/><path d="M14 8l3 4M23 6l2 5M8 31l2-3M30 32l-2-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <h3>Drainage Solutions</h3>
+            <p>French drains and hard‑pipe catch basin systems that move standing water away from your lawn, beds and foundation — for good.</p>
+            <ul class="tags"><li>French drains</li><li>Catch basins</li><li>Grading</li></ul>
+            <a class="card-link" href="#estimate" data-estimate-service="drainage">Request an estimate <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="service-card" data-reveal data-tint="water">
+            <div class="service-icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6c6 7 10 12 10 17a10 10 0 0 1-20 0c0-5 4-10 10-17z" fill="currentColor" opacity=".18"/><path d="M20 6c6 7 10 12 10 17a10 10 0 0 1-20 0c0-5 4-10 10-17z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M25 25a5 5 0 0 1-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></div>
+            <h3>Irrigation &amp; Sprinklers</h3>
+            <p>Custom‑designed systems of every size, installed in 1–2 days with minimal lawn disruption. Repairs, tune‑ups and smart controllers that water late at night to cut evaporation.</p>
+            <ul class="tags"><li>New installs</li><li>Repairs</li><li>Smart controllers</li></ul>
+            <a class="card-link" href="#estimate" data-estimate-service="irrigation">Request an estimate <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="service-card" data-reveal data-tint="earth">
+            <div class="service-icon"><svg viewBox="0 0 40 40" aria-hidden="true"><ellipse cx="20" cy="30" rx="15" ry="5" fill="currentColor" opacity=".18"/><ellipse cx="20" cy="30" rx="15" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 28V14M20 14c-4 0-6 3-7 6M20 14c4 0 6 3 7 6M20 9v1" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></div>
+            <h3>Water Features &amp; Ponds</h3>
+            <p>Fountains, rock waterfalls and garden ponds that bring sound, movement and a little magic to your backyard.</p>
+            <ul class="tags"><li>Fountains</li><li>Waterfalls</li><li>Garden ponds</li></ul>
+            <a class="card-link" href="#estimate" data-estimate-service="water">Request an estimate <span aria-hidden="true">→</span></a>
+          </article>
+
+          <aside class="service-card service-card-cta" data-reveal>
+            <h3>Not sure where to start?</h3>
+            <p>Michael will walk your property, listen to what you love, and recommend a plan — the on‑site estimate is always free.</p>
+            <a class="btn btn-light" href="#estimate" data-estimate-service="general">Request a free estimate</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section class="section work theme-dark" id="work">
+      <div class="container">
+        <header class="section-head work-head" data-reveal>
+          <div>
+            <p class="eyebrow"><span class="dot"></span> Our work</p>
+            <h2>Yards our neighbors <em>love</em> coming home to.</h2>
+          </div>
+          <div class="work-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M12 3l-3 3M12 3l3 3M12 21l-3-3M12 21l3-3M3 12l3-3M3 12l3 3M21 12l-3-3M21 12l-3 3" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><strong>Drag to explore</strong> · <span data-gallery-total>21</span> projects</span>
+          </div>
+        </header>
+      </div>
+
+      <div class="gallery" data-gallery tabindex="0" role="region" aria-roledescription="gallery" aria-label="Project gallery — drag or use the arrow keys to explore, Enter to open a photo">
+        <div class="gallery-plane" data-gallery-plane>
+          <!-- Tiles rendered by js/main.js from PORTFOLIO data -->
+        </div>
+      </div>
+    </section>
+
+    <dialog class="lightbox theme-dark" data-lightbox aria-label="Project photo">
+      <div class="lightbox-inner">
+        <figure class="lightbox-figure">
+          <div class="lightbox-media"><img src="" alt="" data-lightbox-img></div>
+          <figcaption class="lightbox-caption">
+            <span class="lightbox-title" data-lightbox-title></span>
+            <span class="work-tag" data-lightbox-tag></span>
+          </figcaption>
+        </figure>
+        <div class="lightbox-bar">
+          <span class="carousel-count"><span data-lightbox-current>01</span> / <span data-lightbox-total>21</span></span>
+          <div class="lightbox-nav">
+            <button class="icon-btn" type="button" aria-label="Previous photo" data-lightbox-prev>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="icon-btn" type="button" aria-label="Next photo" data-lightbox-next>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+        <button class="icon-btn lightbox-close" type="button" aria-label="Close" data-lightbox-close>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </dialog>
+
+    <!-- ============ FREE ESTIMATE ============ -->
+    <section class="section booking theme-forest" id="estimate">
+      <div class="container booking-layout">
+        <header class="section-head booking-intro" data-reveal>
+          <p class="eyebrow"><span class="dot"></span> Free estimate</p>
+          <h2>Request your <em>free</em> on‑site estimate.</h2>
+          <p>Tell us what you have in mind and pick a time that works for you. Michael will come out, walk the property with you and put together a clear, itemized proposal.</p>
+          <ul class="booking-perks">
+            <li>No cost, no obligation</li>
+            <li>About 30–45 minutes on site</li>
+            <li>Instant confirmation by text &amp; email</li>
+          </ul>
+        </header>
+
+        <div class="booking-card theme-light" data-booking>
+          <ol class="booking-progress" aria-label="Booking steps">
+            <li class="is-active" data-progress="1"><span>1</span><em>Services</em></li>
+            <li data-progress="2"><span>2</span><em>Project</em></li>
+            <li data-progress="3"><span>3</span><em>Date &amp; time</em></li>
+            <li data-progress="4"><span>4</span><em>Details</em></li>
+            <li data-progress="5"><span>5</span><em>Confirm</em></li>
+          </ol>
+
+          <form class="booking-form" data-booking-form novalidate>
+            <div class="booking-viewport">
+              <!-- Step 1 -->
+              <section class="booking-step is-active" data-step="1" aria-label="Choose services">
+                <h3 class="step-title">What would you like done?</h3>
+                <p class="opt-hint step-sub">Pick as many as you like.</p>
+                <div class="option-list" data-booking-services>
+                  <!-- Populated by js/booking.js -->
+                </div>
+                <div class="step-actions">
+                  <span></span>
+                  <button class="btn btn-primary" type="button" data-next>Continue</button>
+                </div>
+              </section>
+
+              <!-- Step 2 -->
+              <section class="booking-step" data-step="2" aria-label="About your project" hidden>
+                <h3 class="step-title">Tell us about your project</h3>
+                <div class="project-panels" data-project-panels>
+                  <!-- Populated by js/estimate.js -->
+                </div>
+                <label class="field project-notes">
+                  <span>Your ideas <small>(optional)</small></span>
+                  <textarea name="notes" rows="3" placeholder="Plants you love, problem spots, gate code, dogs in the yard…" data-booking-notes></textarea>
+                </label>
+                <div class="step-actions">
+                  <button class="btn btn-text" type="button" data-back>Back</button>
+                  <button class="btn btn-primary" type="button" data-next>Continue</button>
+                </div>
+              </section>
+
+              <!-- Step 3 -->
+              <section class="booking-step" data-step="3" aria-label="Choose date and time" hidden>
+                <h3 class="step-title">Pick a day &amp; arrival window</h3>
+                <div class="calendar" data-calendar>
+                  <div class="calendar-head">
+                    <button type="button" class="icon-btn icon-btn-sm" aria-label="Previous month" data-cal-prev>
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                    </button>
+                    <p class="calendar-title" data-cal-title aria-live="polite"></p>
+                    <button type="button" class="icon-btn icon-btn-sm" aria-label="Next month" data-cal-next>
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                    </button>
+                  </div>
+                  <div class="calendar-dow" aria-hidden="true"><span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span></div>
+                  <div class="calendar-grid" role="grid" data-cal-grid></div>
+                </div>
+                <div class="slots" data-slots>
+                  <p class="slots-hint" data-slots-hint>Select a day to see open arrival windows.</p>
+                  <div class="slot-grid" data-slot-grid></div>
+                </div>
+                <div class="step-actions">
+                  <button class="btn btn-text" type="button" data-back>Back</button>
+                  <button class="btn btn-primary" type="button" data-next>Continue</button>
+                </div>
+              </section>
+
+              <!-- Step 4 -->
+              <section class="booking-step" data-step="4" aria-label="Your details" hidden>
+                <h3 class="step-title">Where should Michael meet you?</h3>
+                <div class="field-grid">
+                  <label class="field">
+                    <span>Full name</span>
+                    <input type="text" name="name" autocomplete="name" required placeholder="Jane Homeowner">
+                    <em class="field-error">Please enter your name.</em>
+                  </label>
+                  <label class="field">
+                    <span>Mobile phone</span>
+                    <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required placeholder="(281) 555‑0123">
+                    <em class="field-error">Please enter a valid phone number.</em>
+                  </label>
+                  <label class="field field-full">
+                    <span>Email</span>
+                    <input type="email" name="email" autocomplete="email" required placeholder="you@example.com">
+                    <em class="field-error">Please enter a valid email.</em>
+                  </label>
+                  <label class="field field-full">
+                    <span>Property address</span>
+                    <input type="text" name="address" autocomplete="street-address" required placeholder="Street, City, ZIP">
+                    <em class="field-error">Please enter the property address.</em>
+                  </label>
+                </div>
+                <div class="step-actions">
+                  <button class="btn btn-text" type="button" data-back>Back</button>
+                  <button class="btn btn-primary" type="button" data-next>Review request</button>
+                </div>
+              </section>
+
+              <!-- Step 5 -->
+              <section class="booking-step" data-step="5" aria-label="Review and confirm" hidden>
+                <h3 class="step-title">Does everything look right?</h3>
+                <dl class="review-list" data-review></dl>
+                <div class="step-actions">
+                  <button class="btn btn-text" type="button" data-back>Back</button>
+                  <button class="btn btn-primary btn-confirm" type="submit" data-confirm>
+                    <span class="btn-label">Request my free estimate</span>
+                    <span class="spinner" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </section>
+
+              <!-- Done -->
+              <section class="booking-step booking-done" data-step="done" aria-live="polite" hidden>
+                <div class="done-icon" aria-hidden="true">
+                  <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24" fill="none" stroke="currentColor" stroke-width="3" class="done-circle"/><path d="M15 27l7 7 15-16" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="done-check"/></svg>
+                </div>
+                <h3 class="step-title">You're booked!</h3>
+                <p class="done-lead" data-done-lead></p>
+                <dl class="review-list review-list-compact" data-done-summary></dl>
+                <div class="done-actions">
+                  <button class="btn btn-primary" type="button" data-ics>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 10h16M9 3v4M15 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    Add to calendar
+                  </button>
+                  <button class="btn btn-text" type="button" data-restart>Request another estimate</button>
+                </div>
+              </section>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about theme-light" id="about">
+      <div class="container about-grid">
+        <div class="about-visual" data-reveal>
+          <figure class="about-photo">
+            <img src="assets/img/stock/about-planting.jpg" alt="Gloved hands setting young plants into fresh garden soil" width="1600" height="1067" loading="lazy">
+          </figure>
+          <div class="about-stamp">
+            <strong>25+</strong>
+            <span>years of<br>Houston yards</span>
+          </div>
+        </div>
+        <div class="about-copy" data-reveal>
+          <p class="eyebrow"><span class="dot"></span> Meet Michael</p>
+          <h2>Excellence is a habit Michael Walker has practiced for <em>a long time</em>.</h2>
+          <p>For over 25 years Michael has been designing, installing and caring for irrigation systems and landscapes across the Houston area. He still walks every property himself — because the best results start with understanding each yard's sun, soil and drainage before a single plant goes in the ground.</p>
+          <p>His mission is simple: quality products and outstanding results. That means pro‑grade Hunter and Rain Bird equipment, honest proposals, and a crew that shows up on time and finishes to plan.</p>
+          <ul class="about-creds">
+            <li>
+              <span class="cred-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9.3-8 11-4.6-1.7-8-6-8-11V5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
+              <div><strong>TX Licensed Irrigator #8192</strong><span>Fully covered by liability insurance</span></div>
+            </li>
+            <li>
+              <span class="cred-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4 10-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <div><strong>3‑year / 1‑year warranty</strong><span>On materials and workmanship</span></div>
+            </li>
+          </ul>
+          <div class="partners">
+            <span class="partners-label">We install</span>
+            <span class="partner-word">HUNTER</span>
+            <span class="partner-word partner-word-alt">Rain Bird</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section reviews theme-dark" id="reviews">
+      <div class="container">
+        <header class="section-head section-head-center" data-reveal>
+          <p class="eyebrow"><span class="dot"></span> Kind words</p>
+          <h2>What homeowners <em>say</em>.</h2>
+        </header>
+        <div class="review-grid">
+          <figure class="review-card" data-reveal>
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“Michael responded to my initial contact immediately. They were here on time and completed the project according to plan. I will be recommending Michael's company to my friends and neighbors.”</blockquote>
+            <figcaption><span class="avatar" style="--av: var(--forest-3)">S</span><div><strong>Sharon M.</strong><span>Homeowner</span></div></figcaption>
+          </figure>
+          <figure class="review-card review-card-feature" data-reveal>
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“Thank you to Michael for the advice and help in getting irrigation system overhauled and working again. I would definitely recommend…”</blockquote>
+            <figcaption><span class="avatar" style="--av: var(--earth)">W</span><div><strong>William Wallace</strong><span>Google review</span></div></figcaption>
+          </figure>
+          <figure class="review-card" data-reveal>
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“Excellent service and response time.”</blockquote>
+            <figcaption><span class="avatar" style="--av: var(--sage-deep)">K</span><div><strong>Kathy Andrews</strong><span>Google review</span></div></figcaption>
+          </figure>
+        </div>
+        <div class="review-actions" data-reveal>
+          <a class="btn btn-outline" href="https://local.google.com/place?id=384883002303740497&amp;use=srp" target="_blank" rel="noopener">Read more on Google</a>
+          <a class="btn btn-text" href="https://search.google.com/local/writereview?placeid=ChIJQ_Np_bmpQIYRUXpmKA1hVwU" target="_blank" rel="noopener">Leave a review →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq theme-light" id="faq">
+      <div class="container faq-grid">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow"><span class="dot"></span> Good questions</p>
+          <h2>Frequently <em>asked</em>.</h2>
+          <p>Can't find what you're looking for?<br> Call <a href="tel:2819484343">281‑948‑4343</a> — Michael is happy to help.</p>
+        </header>
+        <div class="faq-list" data-faq>
+          <details class="faq-item" data-reveal>
+            <summary>Are you licensed and insured?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p>Yes. Our Texas Irrigator License is #8192 and we carry liability insurance. In Texas it's against the law for anyone to install a sprinkler system on your property unless they are licensed.</p></div>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>How long does a sprinkler installation take?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p>Between 1 and 2 days, depending on the complexity of the design.</p></div>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>How deep are the trenches?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p>Normal depth for most trenches is 8–12 inches. We use equipment that keeps disruption to your lawn to a minimum.</p></div>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>What if a utility line gets damaged?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p>If we damage a utility line during installation, Michael's Irrigation &amp; Landscaping is responsible for the repair.</p></div>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Do I need to be home during the installation?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p>No. We only need access to where the controller will be mounted, usually the garage or inside the house.</p></div>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>What warranty do you offer?<span class="faq-icon" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p>A full 3‑year warranty against defects in materials and 1 year on workmanship.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact theme-forest" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy" data-reveal>
+          <p class="eyebrow"><span class="dot"></span> Get in touch</p>
+          <h2>Let's make your yard the <em>best on the block</em>.</h2>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg></span>
+              <div><span>Call or text</span><a href="tel:2819484343">281‑948‑4343</a></div>
+            </li>
+            <li>
+              <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+              <div><span>Email</span><a href="mailto:mikesirrigation@gmail.com">mikesirrigation@gmail.com</a></div>
+            </li>
+            <li>
+              <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></svg></span>
+              <div><span>Address</span><address>17515 Dinghy Ct, Crosby, TX 77532</address></div>
+            </li>
+            <li>
+              <span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="20" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+              <div><span>We accept</span><strong>Cash &amp; Check</strong></div>
+            </li>
+          </ul>
+          <p class="service-area">Proudly serving homeowners across <strong>Harris County &amp; Greater Houston</strong>.</p>
+        </div>
+
+        <form class="contact-form theme-light" data-contact-form novalidate data-reveal>
+          <div class="contact-form-body">
+            <h3>Send Michael a message</h3>
+            <div class="field-grid">
+              <label class="field">
+                <span>Name</span>
+                <input type="text" name="name" autocomplete="name" required>
+                <em class="field-error">Please enter your name.</em>
+              </label>
+              <label class="field">
+                <span>Phone</span>
+                <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required>
+                <em class="field-error">Please enter a valid phone number.</em>
+              </label>
+              <label class="field field-full">
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" required>
+                <em class="field-error">Please enter a valid email.</em>
+              </label>
+              <label class="field field-full">
+                <span>How can we help?</span>
+                <textarea name="message" rows="4" required></textarea>
+                <em class="field-error">Please tell us a little about your project.</em>
+              </label>
+            </div>
+            <button class="btn btn-primary btn-block btn-confirm" type="submit">
+              <span class="btn-label">Send message</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="contact-success" data-contact-success hidden>
+            <div class="done-icon" aria-hidden="true">
+              <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24" fill="none" stroke="currentColor" stroke-width="3" class="done-circle"/><path d="M15 27l7 7 15-16" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="done-check"/></svg>
+            </div>
+            <h3>Message sent!</h3>
+            <p>Thanks for reaching out. Michael typically replies within one business day.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer theme-dark">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand" aria-label="Back to top">
+          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="24" r="23" fill="var(--cream)"/>
+            <path d="M24 37V21" stroke="var(--forest)" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M24 27c-6.5 0-10.5-4-11.5-11 7 0 11.5 4 11.5 11z" fill="var(--sage-deep)"/>
+            <path d="M24 23c.6-7.5 5-12 13-12.5C36.6 18 32 22.6 24 23z" fill="var(--forest)"/>
+            <path d="M15 37.5h18" stroke="var(--earth)" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M33.5 26.5c1.9 2.4 2.9 4 2.9 5.3a2.9 2.9 0 0 1-5.8 0c0-1.3 1-2.9 2.9-5.3z" fill="var(--water-deep)"/>
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">Michael's</span>
+            <span class="brand-sub">Irrigation &amp; Landscaping</span>
+          </span>
+        </a>
+        <p>“A beautiful landscape is a pleasure to be savored.”</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Our Work</a></li>
+          <li><a href="#estimate">Free Estimate</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="footer-nav">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#estimate" data-estimate-service="landscape">Landscape Design</a></li>
+          <li><a href="#estimate" data-estimate-service="lawn">Lawn Care</a></li>
+          <li><a href="#estimate" data-estimate-service="drainage">Drainage</a></li>
+          <li><a href="#estimate" data-estimate-service="irrigation">Irrigation &amp; Sprinklers</a></li>
+          <li><a href="#estimate" data-estimate-service="water">Water Features</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://local.google.com/place?id=384883002303740497&amp;use=srp" target="_blank" rel="noopener">Google</a></li>
+          <li><a href="https://www.yelp.com/biz/michaels-irrigation-and-landscaping-crosby" target="_blank" rel="noopener">Yelp</a></li>
+          <li><a href="https://www.facebook.com/pages/Michaels-Irrigation-and-Landscaping/269428696421468" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> Michael's Irrigation &amp; Landscaping · Crosby, TX · TX Licensed Irrigator #8192</p>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="js/estimate.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
