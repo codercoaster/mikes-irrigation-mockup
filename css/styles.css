@@ -611,7 +611,6 @@ html.lightbox-open { overflow: hidden; }
 .option input:checked + label { border-color: var(--select); background: var(--select-soft); }
 .option input:checked + label .chip-icon { background: var(--select); color: var(--select-fg); }
 .option input:focus-visible + label { outline: 3px solid var(--focus); outline-offset: 2px; }
-.option-full { grid-column: 1 / -1; }
 .option label { padding-right: 44px; }
 .option-check { position: absolute; top: 50%; right: 14px; width: 20px; height: 20px; margin-top: -10px; border-radius: 6px; border: 1.5px solid var(--line-strong); background: var(--surface); display: grid; place-items: center; pointer-events: none; transition: background-color var(--dur-ui) ease, border-color var(--dur-ui) ease; }
 .option-check svg { width: 12px; height: 12px; color: var(--select-fg); opacity: 0; transform: scale(.6); transition: opacity 150ms ease, transform 200ms var(--ease-out); }

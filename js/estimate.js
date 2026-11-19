@@ -152,7 +152,7 @@
   /* ---------- Step 1: services (multi-select) ---------- */
   const servicesWrap = root.querySelector('[data-booking-services]');
   servicesWrap.innerHTML = SERVICES.map((s) => `
-    <div class="option${s.id === 'general' ? ' option-full' : ''}">
+    <div class="option">
       <input type="checkbox" name="b-service" id="b-${s.id}" value="${s.id}">
       <label for="b-${s.id}">
         <span class="chip-icon" style="--chip:${s.color}">${ICONS[s.id] || ''}</span>
