@@ -17,26 +17,6 @@
     html.classList.remove('js-motion'); // never leave content hidden if the CDN fails
   }
 
-  /* ---------- Hero review badge: a different real review on each load ---------- */
-  (function rotateHeroReview() {
-    const quoteEl = document.querySelector('[data-hero-quote]');
-    const authorEl = document.querySelector('[data-hero-author]');
-    if (!quoteEl || !authorEl) return;
-    const reviews = [
-      { quote: 'Excellent service and response time.', author: 'Kathy A., Google review' },
-      { quote: 'They were here on time and completed the project according to plan.', author: 'Sharon M., Homeowner' },
-      { quote: 'Thank you to Michael for the advice and help in getting irrigation system overhauled and working again.', author: 'William W., Google review' },
-    ];
-    const KEY = 'heroReviewIdx';
-    let last = -1;
-    try { last = parseInt(localStorage.getItem(KEY), 10); } catch (e) { /* storage blocked */ }
-    let idx = Math.floor(Math.random() * reviews.length);
-    if (idx === last) idx = (idx + 1 + Math.floor(Math.random() * (reviews.length - 1))) % reviews.length;
-    try { localStorage.setItem(KEY, String(idx)); } catch (e) { /* storage blocked */ }
-    quoteEl.textContent = '\u201C' + reviews[idx].quote + '\u201D';
-    authorEl.textContent = '\u2014 ' + reviews[idx].author;
-  })();
-
   let menuOpen = false;
   const headerH = () => parseInt(getComputedStyle(html).getPropertyValue('--header-h'), 10) || 68;
 
@@ -87,7 +67,7 @@
     e.preventDefault();
     if (menuOpen) closeMenu(false);
     if (id === '#top') MIL.scrollToY(0); else MIL.scrollTo(id);
-    history.replaceState(null, '', id === '#top' ? location.pathname : id);
+    history.replaceState(null, '', location.pathname + location.search);
   });
 
   /* ---------- Header state ---------- */
@@ -234,7 +214,7 @@
       el.dataset.idx = i;
       el.setAttribute('aria-label', `Open photo: ${p.t}`);
       el.style.cssText = `left:${c * PX}px;top:${r * PY + (mod(c, 2) ? PY / 2 : 0)}px;width:${W}px;height:${H}px`;
-      el.innerHTML = `<img src="assets/img/portfolio/${p.f}.jpg" alt="" loading="lazy" decoding="async" draggable="false">
+      el.innerHTML = `<img src="assets/img/portfolio/${p.f}.webp" alt="" loading="lazy" decoding="async" draggable="false">
         <span class="tile-cap"><span class="tile-title">${p.t}</span><span class="work-tag" data-type="${p.type}">${p.type}</span></span>`;
       return el;
     }
@@ -435,7 +415,7 @@
       function fill(i) {
         current = mod(i, N);
         const p = PORTFOLIO[current];
-        img.src = `assets/img/portfolio/${p.f}.jpg`;
+        img.src = `assets/img/portfolio/${p.f}.webp`;
         img.alt = p.t;
         titleEl.textContent = p.t;
         tagEl.textContent = p.type;
@@ -593,8 +573,7 @@
     const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
     heroTl
       .fromTo('.hero-media img', { scale: 1.08, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.4, ease: 'power2.out' }, 0)
-      .to('[data-hero-item]', { opacity: 1, y: 0, duration: 0.8, stagger: 0.07 }, 0.25)
-      .fromTo('.hero-badge', { opacity: 0, y: 12, scale: 0.97 }, { opacity: 1, y: 0, scale: 1, duration: 0.6 }, 0.9);
+      .to('[data-hero-item]', { opacity: 1, y: 0, duration: 0.8, stagger: 0.07 }, 0.25);
 
     // Scroll reveals, batched with a short stagger
     ScrollTrigger.batch('[data-reveal]', {
